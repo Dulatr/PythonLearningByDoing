@@ -49,7 +49,7 @@ While I'm currently working out specific dates to accomplish certain projects, b
 
 * Numbers
     - [x] [Display of Pi digits](/Numbers/DigitsOfPi/)
-    - [ ] Fib sequence
+    - [X] [Fib sequence](/Numbers/FibonnaciSequence)
     - [ ] Prime factors
     - [ ] Binary to Decimal converter
     - [ ] Unit conversion
