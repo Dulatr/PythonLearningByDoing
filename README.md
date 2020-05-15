@@ -6,6 +6,7 @@ A repository of small projects written in python. These will be written in `Pyth
 
 * [Goals](#Goals)
 * [Project Structure](#Project-Layout)
+* [Projects Timeline](#Projects-Timeline)
 
 ## Goal(s)
 
@@ -25,7 +26,7 @@ The structure will be based on the type of project that is added. For starters t
 ```bash
 ├── PythonLearningByDoing
 │   ├── Category
-│   │   └── Project 
+│   │   ├── Project 
 │   │   │   ├── *.py
 │   │   │   └── README.md
 │   │   └── README.md
@@ -41,3 +42,67 @@ After the initial commit, any pushed changes will have commit messages with spec
     - If at some point there is an idea to expand a project's operation, any accepted changes must have message label **Feature**
 * **Project**
     - Any intial addition of a base project will be labeled **Project**. 
+
+## Projects Timeline
+
+While I'm currently working out specific dates to accomplish certain projects, below is a list of a few things I expect to start or have started before the specified dates (to be outlined at by the end of May 2020). This is tentative as I either finish earlier or later for most of the projects but the check list will be updated as they are added. Also, some projects seen on this list may be removed or added in the future depending on what might interest me on that particular topic.
+
+* Numbers
+    - [x] [Display of Pi digits](/Numbers/DigitsOfPi/)
+    - [ ] Fib sequence
+    - [ ] Prime factors
+    - [ ] Binary to Decimal converter
+    - [ ] Unit conversion
+    - [ ] Alarm Clock
+    - [ ] City distances
+    - [ ] Factorial
+    - [ ] Complex Algebra
+    - [ ] Coin Flip
+    - [ ] Fast Exponentiation
+* Classic Algorithms
+    - [ ] Collatz Conjecture
+    - [ ] Sorting
+        - [ ] Merge
+        - [ ] Bubble
+    - [ ] Closest pair
+* Graphing
+    - [ ] Link graph
+    - [ ] Dijkstra's Algorithm
+* Data Structures
+    - [ ] Inverted Index
+* Text Manipulation
+    - [ ] Fizz Buzz
+    - [ ] String Reversal
+    - [ ] Pig Latin
+    - [ ] Vowel Counting
+    - [ ] Palindromes
+    - [ ] Word Count
+    - [ ] Text Editor
+    - [ ] Stock Tracker
+    - [ ] Shout Box/Journal
+    - [ ] Basic Ciphers
+* Classes
+    - [ ] Product Inventory
+    - [ ] Company Manager
+    - [ ] Image Gallery
+    - [ ] Shapes
+    - [ ] Flower Shop
+* Web 
+    - [ ] Page Scraper
+    - [ ] Fetch the Weather
+    - [ ] Get Atomic Time
+    - [ ] Content Management System
+    - [ ] Forum
+* Files
+    - [ ] Quiz Maker
+    - [ ] CSV sort
+    - [ ] PDF Generator
+* Databases
+    - [ ] SQL Query Analyzer
+    - [ ] Remote SQL Tool
+    - [ ] Report Generator
+    - [ ] Travel Planner
+* Multimedia 
+    - [ ] Slide Show
+    - [ ] Online Video Stream
+    - [ ] GIF Creator
