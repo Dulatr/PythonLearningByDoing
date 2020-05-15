@@ -1,11 +1,11 @@
 # Python Learning By Doing
 
-A repository of small projects written in python. These will be written in `Python3.8` and might not work for older versions (in some cases before `Python3.6`). I particularly  prefer using *f-literals* introduced in [PEP 498](https://www.python.org/dev/peps/pep-0498/). 
+A repository of small projects written in python. These will be written in `Python3.8` and might not work for older versions (in some cases before `Python3.6`). I particularly  prefer using **f-literals** introduced in [PEP 498](https://www.python.org/dev/peps/pep-0498/). 
 
 # Table of Contents
 
 * [Goals](#Goals)
-* [Project Structure](#Project\ Layout)
+* [Project Structure](#Project-Layout)
 
 ## Goal(s)
 
@@ -26,8 +26,9 @@ The structure will be based on the type of project that is added. For starters t
 ├── PythonLearningByDoing
 │   ├── Category
 │   │   └── Project 
-│   │       ├── *.py
-│   │       └── README.md
+│   │   │   ├── *.py
+│   │   │   └── README.md
+│   │   └── README.md
 │   └── README.md
 ```
 After the initial commit, any pushed changes will have commit messages with specified lables:
