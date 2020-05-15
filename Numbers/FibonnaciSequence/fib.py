@@ -1,3 +1,10 @@
+#### Fibonnaci sequence ####
+#
+# INPUT(s): [n] : [int]
+#           -Length of desired sequence output.
+#
+# OUPUT(s): [...] : [List]
+#           -Outputs a list of integers representing the sequence.
 def fib(n):
     if n==0:
         return []
