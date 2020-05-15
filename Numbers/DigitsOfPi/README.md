@@ -25,7 +25,7 @@ Output:
 3.1415926535897932384
 ```
 
-The **verbose** flag expects a `True` or `False` followed by `-v`. It returns the value of `Pi` and the associated error. 
+The **verbose** flag expects a `True` or `False` after `-v`. It returns the value of `Pi` and the associated error. 
 
 Example:
 ```python
@@ -53,4 +53,4 @@ print(f"Value: {pi[0]}")
 # error is second index
 print(f"Error: {pi[1]}")
 ```
-Be aware that the method returns a `list` that containing `Decimal` objects from the [decimal module](https://docs.python.org/3.8/library/decimal.html). 
+Be aware that the method returns a `list` containing `Decimal` objects from the [decimal module](https://docs.python.org/3.8/library/decimal.html). 
