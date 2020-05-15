@@ -1,5 +1,4 @@
 import argparse
-import json
 #use the decimal module to handle large precision values
 from decimal import Decimal as Dec, getcontext as gc
 
