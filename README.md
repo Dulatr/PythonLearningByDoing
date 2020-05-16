@@ -71,7 +71,7 @@ While I'm currently working out specific dates to accomplish certain projects, b
 * Data Structures
     - [ ] Inverted Index
 * Text Manipulation
-    - [ ] Fizz Buzz
+    - [x] [Fizz Buzz](/Text/FizzBuzz)
     - [ ] String Reversal
     - [ ] Pig Latin
     - [ ] Vowel Counting
