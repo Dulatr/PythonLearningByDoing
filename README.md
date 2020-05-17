@@ -72,7 +72,7 @@ While I'm currently working out specific dates to accomplish certain projects, b
     - [ ] Inverted Index
 * Text Manipulation
     - [x] [Fizz Buzz](/Text/FizzBuzz)
-    - [ ] String Reversal
+    - [x] [String Reversal](/Text/StringReverse)
     - [ ] Pig Latin
     - [ ] Vowel Counting
     - [ ] Palindromes
