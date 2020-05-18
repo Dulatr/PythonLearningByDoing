@@ -73,7 +73,7 @@ While I'm currently working out specific dates to accomplish certain projects, b
 * Text Manipulation
     - [x] [Fizz Buzz](/Text/FizzBuzz)
     - [x] [String Reversal](/Text/StringReverse)
-    - [ ] Pig Latin
+    - [x] [Pig Latin](/Text/PigLatin)
     - [ ] Vowel Counting
     - [ ] Palindromes
     - [ ] Word Count
