@@ -18,3 +18,9 @@ Then type away!
 ## Planned Changes
 
 This program is as barebones as it gets for a text editor and there are plans to add several fun features that will be outlined in the coming days here!
+
+* June 1st
+    - [ ] Convert to MVC pattern for program
+    - [ ] Create initial widgets based on MVC
+        - [ ] Word count(s)
+        - [ ] Pig Latin
