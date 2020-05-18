@@ -2,7 +2,7 @@
 
 A simple lightweight text editor application written in python. Built with [wxPython](https://wxpython.org/pages/overview/).
 
-![myimage](editor.png)
+![myimage](editor.PNG)
 
 ## How to use
 
