@@ -77,7 +77,7 @@ While I'm currently working out specific dates to accomplish certain projects, b
     - [ ] Vowel Counting
     - [ ] Palindromes
     - [ ] Word Count
-    - [ ] Text Editor
+    - [x] [Text Editor](/Text/FizzEditor)
     - [ ] Stock Tracker
     - [ ] Shout Box/Journal
     - [ ] Basic Ciphers
