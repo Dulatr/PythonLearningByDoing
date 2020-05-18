@@ -1,0 +1,11 @@
+A lightweight text editor written in Python using wxPython! What else is there to say?
+
+
+If you like this work and would like to contribute checkout the repository at:
+
+<>
+
+
+Feel like donating for some reason? Check the link: 
+
+https://paypal.me/Dulatr
