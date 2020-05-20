@@ -74,9 +74,9 @@ While I'm currently working out specific dates to accomplish certain projects, b
     - [x] [Fizz Buzz](/Text/FizzBuzz)
     - [x] [String Reversal](/Text/StringReverse)
     - [x] [Pig Latin](/Text/PigLatin)
-    - [ ] Vowel Counting
+    - [x] [Vowel Counting](/Text/WordCount)
     - [ ] Palindromes
-    - [ ] Word Count
+    - [x] [Word Count](/Text/WordCount)
     - [x] [Text Editor](/Text/FizzEditor)
     - [ ] Stock Tracker
     - [ ] Shout Box/Journal
