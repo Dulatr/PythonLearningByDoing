@@ -82,7 +82,7 @@ While I'm currently working out specific dates to accomplish certain projects, b
     - [ ] Shout Box/Journal
     - [ ] Basic Ciphers
 * Classes
-    - [ ] Product Inventory
+    - [x] [Product Inventory](/Classes/InventoryProduct)
     - [ ] Company Manager
     - [ ] Image Gallery
     - [ ] Shapes
