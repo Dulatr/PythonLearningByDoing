@@ -4,7 +4,6 @@ Use the shapes module instead.
 """
 
 import abc
-import helpers as h
 
 class Shape(abc.ABC):
     """

@@ -99,6 +99,9 @@ class Square(base.Polygon):
         return "Square"
 
 class Triangle(base.Polygon):
+    """
+    A 3 sided polygon with height at a right angle to the base. 
+    """
     def __init__(self,location,base,height):
         if h.checkInput2D(location):
             super().__init__(location,(base,height),3)
@@ -164,18 +167,75 @@ class Rectangle(base.Polygon):
 
 class Rhombus(base.Polygon):
     """
-    Currently not implemented
+    A 4 sided polygon each of same length at angles less than 90 degrees to each other.
     """
-    pass
+    def __init__(self,location,diagonal_1,diagonal_2):
+        if h.checkInput2D(location):
+            super().__init__(location,(diagonal_1,diagonal_2),4)
+        else:
+            raise Exception("Location specified must be a list or tuple of int/float")
+        self._d1 = diagonal_1
+        self._d2 = diagonal_2
+    
+    def area(self):
+        return self._d1 * self._d2 / 2.0
+    def perimeter(self):
+        return (self._d1 + self._d2) * 2.0
+    
+    def __str__(self):
+        return "Rhombus"
 
-class Trapezoid(base.Polygon):
-    """
-    Currently not implemented
-    """
-    pass
+    @property
+    def d1(self):
+        return self._d1
+    @d1.setter
+    def d1(self,val):
+        self._d1 = val
+    @property
+    def d2(self):
+        return self._d2
+    @d2.setter
+    def d2(self,val):
+        self._d2 = val
 
-class Parallelogram(base.Polygon):
+class Trapezoid(Rectangle):
     """
-    Currently not implemented
+    A 4 sided polygon with at least one set of parallel sides.
     """
-    pass
+    def __init__(self,location,base,height,side_a,side_c,side_d):
+        if h.checkInput2D(location):
+            super().__init__(location,base,height)
+            self._side_a = side_a
+            self._side_c = side_c
+            self._side_d = side_d
+        else:
+            raise Exception("Location specified must be a list or tuple of int/float")
+    
+    def area(self):
+        return ((self._side_a + self._base) / 2.0) * self.height
+    def perimeter(self):
+        return self._side_a + self._base + self._side_c + self._side_d
+    
+    def __str__(self):
+        return "Trapezoid"
+
+    @property
+    def A(self):
+        return self._side_a
+    @A.setter
+    def A(self,val):
+        self._side_a = val
+    @property
+    def C(self):
+        return self._side_c
+    @C.setter
+    def C(self,val):
+        self._side_c = val
+    @property
+    def D(self):
+        return self._side_d
+    @D.setter
+    def D(self,val):
+        self._side_d = val
+
+      
