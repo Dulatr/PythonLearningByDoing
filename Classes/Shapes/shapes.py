@@ -12,7 +12,10 @@ class Circle(base.Shape):
     """
     def __init__(self,center,radius):
         if h.checkInput2D(center):
-            super().__init__(center,radius)
+            if isinstance(radius,(float,int)):
+                super().__init__(center,radius)
+            else:
+                raise Exception(f"Cannot create radius of type {type(radius)}")
         else:
             raise Exception("Location specified must be a list or tuple of int/float")
 
@@ -29,6 +32,7 @@ class Circle(base.Shape):
         return self._size
     @radius.setter
     def radius(self,val):
+        h.checkProperty(val)
         self._size = val
 
 class Ellipse(Circle):
@@ -37,10 +41,11 @@ class Ellipse(Circle):
     Inherits from shape, defines size as a tuple of radii.
     """
     def __init__(self,location,r_major,r_minor):
+        h.checkProperty([r_major,r_minor])
         if r_minor > r_major:
-            raise Exception("Major axis must be greater than minor.")
+            raise Exception("Major axis must be greater than or equal to minor.")
         if h.checkInput2D(location):
-            super().__init__(location,(r_major,r_minor))
+            super().__init__(location,r_major)
         else:
             raise Exception("Location specified must be a list or tuple of int/float")
 
@@ -55,26 +60,25 @@ class Ellipse(Circle):
         Currently not implemented.
         """
         pass
+
     def __str__(self):
         return "Ellipse"
+
     @property
     def r_major(self):
         return self._major
     @r_major.setter
     def r_major(self,val):
-        if isinstance(val,int):
-            self._major = val
-        else:
-            raise Exception("Radius specified must be of type int")
+        h.checkProperty(val)
+        self._major = val
     @property
     def r_minor(self):
         return self._minor
     @r_minor.setter
-    def r_minor(self):
-        if isinstance(val,int):
-            self._minor = val
-        else:
-            raise Exception("Radius specified must be of type int")
+    def r_minor(self,val):
+        h.checkProperty(val)
+        self._minor = val
+
     @property
     def e(self):
         return sqrt(1-(self._minor/self._major)**2)
@@ -86,7 +90,10 @@ class Square(base.Polygon):
     """
     def __init__(self,location,size):
         if h.checkInput2D(location):
-            super().__init__(location,size,4)
+            if isinstance(size,(float,int)):
+                super().__init__(location,size,4)
+            else:
+                raise Exception(f"Cannot create side length of type {type(size)}")
         else:
             raise Exception("Location specified must be a list or tuple of int/float")
     
@@ -104,9 +111,11 @@ class Triangle(base.Polygon):
     """
     def __init__(self,location,base,height):
         if h.checkInput2D(location):
+            h.checkProperty([base,height])
             super().__init__(location,(base,height),3)
         else:
             raise Exception("Location specified must be a list or tuple of int/float")
+        
         self._base = base
         self._height = height
 
@@ -123,12 +132,14 @@ class Triangle(base.Polygon):
         return self._base
     @base.setter
     def base(self,val):
+        h.checkProperty(val)
         self._base = val
     @property
     def height(self):
         return self._height
     @height.setter
     def height(self,val):
+        h.checkProperty(val)
         self._height = val
 
 class Rectangle(base.Polygon):
@@ -138,9 +149,11 @@ class Rectangle(base.Polygon):
     """
     def __init__(self,location,base,height):
         if h.checkInput2D(location):
+            h.checkProperty([base,height])
             super().__init__(location,(base,height),4)
         else:
             raise Exception("Location specified must be a list or tuple of int/float")
+        
         self._base = base
         self._height = height
     
@@ -157,12 +170,14 @@ class Rectangle(base.Polygon):
         return self._base
     @base.setter
     def base(self,val):
+        h.checkProperty(val)
         self._base = val
     @property
     def height(self):
         return self._height
     @height.setter
     def height(self,val):
+        h.checkProperty(val)
         self._height = val
 
 class Rhombus(base.Polygon):
@@ -171,9 +186,11 @@ class Rhombus(base.Polygon):
     """
     def __init__(self,location,diagonal_1,diagonal_2):
         if h.checkInput2D(location):
-            super().__init__(location,(diagonal_1,diagonal_2),4)
+            h.checkProperty([diagonal_1,diagonal_2])            
+            super().__init__(location,(diagonal_1,diagonal_2),4)        
         else:
             raise Exception("Location specified must be a list or tuple of int/float")
+        
         self._d1 = diagonal_1
         self._d2 = diagonal_2
     
@@ -190,12 +207,14 @@ class Rhombus(base.Polygon):
         return self._d1
     @d1.setter
     def d1(self,val):
+        h.checkProperty(val)
         self._d1 = val
     @property
     def d2(self):
         return self._d2
     @d2.setter
     def d2(self,val):
+        h.checkProperty(val)
         self._d2 = val
 
 class Trapezoid(Rectangle):
@@ -205,11 +224,13 @@ class Trapezoid(Rectangle):
     def __init__(self,location,base,height,side_a,side_c,side_d):
         if h.checkInput2D(location):
             super().__init__(location,base,height)
-            self._side_a = side_a
-            self._side_c = side_c
-            self._side_d = side_d
+            h.checkProperty([side_a,side_c,side_d])            
         else:
             raise Exception("Location specified must be a list or tuple of int/float")
+
+        self._side_a = side_a
+        self._side_c = side_c
+        self._side_d = side_d
     
     def area(self):
         return ((self._side_a + self._base) / 2.0) * self.height
@@ -224,18 +245,21 @@ class Trapezoid(Rectangle):
         return self._side_a
     @A.setter
     def A(self,val):
+        h.checkProperty(val)
         self._side_a = val
     @property
     def C(self):
         return self._side_c
     @C.setter
     def C(self,val):
+        h.checkProperty(val)
         self._side_c = val
     @property
     def D(self):
         return self._side_d
     @D.setter
     def D(self,val):
+        h.checkProperty(val)
         self._side_d = val
 
       
