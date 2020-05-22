@@ -9,6 +9,8 @@ The current available shapes are:
 * Triangle
 * Rectangle
 * Ellipse 
+* Rhombus
+* Trapezoid
 
 Each overriding their parent area and perimeter function. The location property checks for `(int,float)`inside of a `(list,tuple)` and raises an exception for the user otherwise.
 
