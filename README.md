@@ -55,7 +55,7 @@ While I'm currently working out specific dates to accomplish certain projects, b
     - [ ] Unit conversion
     - [ ] Alarm Clock
     - [ ] City distances
-    - [ ] Factorial
+    - [x] [Factorial](/Numbers/Factorial)
     - [ ] Complex Algebra
     - [ ] Coin Flip
     - [ ] Fast Exponentiation
