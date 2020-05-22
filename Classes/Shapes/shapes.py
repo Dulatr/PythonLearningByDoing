@@ -2,7 +2,7 @@
 A collection of defined basic geometric shapes.
 """
 import base
-from math import pi,sqrt
+from math import pi,sqrt,sin
 import helpers as h
 
 class Circle(base.Shape):
@@ -107,40 +107,57 @@ class Square(base.Polygon):
 
 class Triangle(base.Polygon):
     """
-    A 3 sided polygon with height at a right angle to the base. 
+    A 3 sided polygon with height perpindicular to the base. 
+
+    Side args start on the right and work counterclockwise.
+    <side_c> is the base.
     """
-    def __init__(self,location,base,height):
+    def __init__(self,location,side_a,side_b,side_c):
         if h.checkInput2D(location):
-            h.checkProperty([base,height])
-            super().__init__(location,(base,height),3)
+            h.checkProperty([side_a,side_b,side_c])
+            super().__init__(location,(side_a,side_b,side_c),3)
         else:
             raise Exception("Location specified must be a list or tuple of int/float")
-        
-        self._base = base
-        self._height = height
+        self._side_a = side_a
+        self._side_b = side_b
+        self._base = side_c
+        self._height = sin(h.angle(side_a,side_b,side_c,Angle='A')) * side_b
 
     def area(self):
         return 0.5 * self._base * self._height
     def perimeter(self):
-        pass
+        return self._side_a + self._side_b + self._base 
 
     def __str__(self):
         return "Triangle"
     
     @property
+    def a(self):
+        return self._side_a
+    @a.setter
+    def a(self,val):
+        h.checkProperty(val,True)
+        self._side_a = val        
+        self._height = sin(h.angle(self._side_a,self._side_b,self._base,Angle='A')) * self._side_b
+    @property
+    def b(self):
+        return self._side_b
+    @b.setter
+    def b(self,val):
+        h.checkProperty(val,True)
+        self._side_b = val        
+        self._height = sin(h.angle(self._side_a,self._side_b,self._base,Angle='A')) * self._side_b
+    @property
     def base(self):
         return self._base
     @base.setter
     def base(self,val):
-        h.checkProperty(val)
-        self._base = val
+        h.checkProperty(val,True)
+        self._base = val        
+        self._height = sin(h.angle(self._side_a,self._side_b,self._base,Angle='A')) * self._side_b
     @property
     def height(self):
         return self._height
-    @height.setter
-    def height(self,val):
-        h.checkProperty(val)
-        self._height = val
 
 class Rectangle(base.Polygon):
     """
