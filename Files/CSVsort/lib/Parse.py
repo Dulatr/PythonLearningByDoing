@@ -20,7 +20,6 @@ def parse():
     # optional args
     parser.add_argument('--version',action='version',version=f"{Doc.name} {Doc.version}",help=Doc.v_description)
     parser.add_argument('-a',nargs=1,default=['T'],help=Doc.ascending)
-    parser.add_argument('-d',nargs=1,default=['F'],help=Doc.descending)
     parser.add_argument('-o',type=ap.FileType('w'),nargs='?',help=Doc.outfile)
     
     args = parser.parse_args()
@@ -28,7 +27,6 @@ def parse():
     # convert string arguments to boolean
     args.row = str2Bool(args.row[0])
     args.a = str2Bool(args.a[0])
-    args.d = str2Bool(args.d[0])
 
     return args
 
