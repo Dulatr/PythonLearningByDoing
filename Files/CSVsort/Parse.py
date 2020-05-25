@@ -2,7 +2,7 @@
 The argument parsing methods for the CSVsort program.
 """
 import argparse as ap
-from lib.document import Doc
+from document import Doc
 
 def parse():
     """
