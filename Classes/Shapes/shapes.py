@@ -4,6 +4,7 @@ A collection of defined basic geometric shapes.
 import base
 from math import pi,sqrt,sin
 import helpers as h
+from warnings import warn
 
 class Circle(base.Shape):
     """
@@ -55,11 +56,13 @@ class Ellipse(Circle):
     def area(self):
         return self._minor * self._minor * pi
     def perimeter(self):
-        """ 
-        An approximation of the elliptical perimeter.
-        Currently not implemented.
         """
-        pass
+        Returns the perimeter approximation. If major is not aprox. 3 times larger than
+        minor axis, approximation is reasonable. Else a warning is printed to the user. 
+        """
+        if self._major > 3.0 * self._minor:
+            warn("Major axis is much larger than the minor axis. Perimeter error may be large.",Warning,stacklevel=2)
+        return 2.0 * pi * sqrt((self._major ** 2 + self._minor ** 2) / 2.0)
 
     def __str__(self):
         return "Ellipse"
@@ -292,4 +295,4 @@ class Trapezoid(Rectangle):
         h.checkProperty(val)
         self._side_d = val
 
-      
+     
