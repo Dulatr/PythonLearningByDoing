@@ -85,7 +85,7 @@ While I'm currently working out specific dates to accomplish certain projects, b
     - [x] [Product Inventory](/Classes/InventoryProduct)
     - [ ] Company Manager
     - [ ] Image Gallery
-    - [ ] Shapes
+    - [x] [Shapes](/Classes/Shapes)
     - [ ] Flower Shop
 * Web 
     - [ ] Page Scraper
