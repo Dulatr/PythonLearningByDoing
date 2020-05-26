@@ -210,11 +210,15 @@ class Rhombus(base.Polygon):
         
         self._d1 = diagonal_1
         self._d2 = diagonal_2
-    
+        self._a = sqrt((0.5 * self._d1) ** 2 + (0.5 * self._d2) ** 2)
+
+        if not h.triInequality((0.5 * self._d1), (0.5 * self._d2), self._a):
+            raise ValueError("Side lengths invalid, must follow triangle inequality.")
+   
     def area(self):
         return self._d1 * self._d2 / 2.0
-    def perimeter(self):
-        return (self._d1 + self._d2) * 2.0
+    def perimeter(self):     
+        return 4.0 * self._a
     
     def __str__(self):
         return "Rhombus"
@@ -233,6 +237,15 @@ class Rhombus(base.Polygon):
     def d2(self,val):
         h.checkProperty(val)
         self._d2 = val
+    @property
+    def a(self):
+        return self._a
+    @a.setter
+    def a(self,val):
+        if not h.triInequality((0.5 * self._d1),(0.5 * self._d2),self._a):
+            raise ValueError("Side length invalid, must follow triangle inequality.")
+        h.checkProperty(val)
+        self._a = val
 
 class Trapezoid(Rectangle):
     """
