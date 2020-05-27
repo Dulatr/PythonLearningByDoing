@@ -75,7 +75,7 @@ While I'm currently working out specific dates to accomplish certain projects, b
     - [x] [String Reversal](/Text/StringReverse)
     - [x] [Pig Latin](/Text/PigLatin)
     - [x] [Vowel Counting](/Text/WordCount)
-    - [ ] Palindromes
+    - [x] [Palindromes](/Text/Palindromes)
     - [x] [Word Count](/Text/WordCount)
     - [x] [Text Editor](/Text/FizzEditor)
     - [ ] Stock Tracker
