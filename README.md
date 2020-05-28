@@ -54,7 +54,7 @@ While I'm currently working out specific dates to accomplish certain projects, b
     - [ ] Binary to Decimal converter
     - [ ] Unit conversion
     - [ ] Alarm Clock
-    - [ ] City distances
+    - [x] [City distances](/Numbers/Distance)
     - [x] [Factorial](/Numbers/Factorial)
     - [ ] Complex Algebra
     - [ ] Coin Flip
