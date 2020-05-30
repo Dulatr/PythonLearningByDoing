@@ -62,7 +62,7 @@ While I'm currently working out specific dates to accomplish certain projects, b
 * Classic Algorithms
     - [ ] Collatz Conjecture
     - [ ] Sorting
-        - [ ] Merge
+        - [X] [Merge](/ClassicAlgorithms/MergeSort)
         - [ ] Bubble
     - [ ] Closest pair
 * Graphing
@@ -70,6 +70,7 @@ While I'm currently working out specific dates to accomplish certain projects, b
     - [ ] Dijkstra's Algorithm
 * Data Structures
     - [ ] Inverted Index
+    - [ ] Hash Table
 * Text Manipulation
     - [x] [Fizz Buzz](/Text/FizzBuzz)
     - [x] [String Reversal](/Text/StringReverse)
