@@ -50,7 +50,7 @@ While I'm currently working out specific dates to accomplish certain projects, b
 * Numbers
     - [x] [Display of Pi digits](/Numbers/DigitsOfPi/)
     - [X] [Fib sequence](/Numbers/FibonnaciSequence)
-    - [ ] Prime factors
+    - [x] [Prime factors](/Numbers/PrimeFactors)
     - [ ] Binary to Decimal converter
     - [ ] Unit conversion
     - [ ] Alarm Clock
@@ -65,6 +65,7 @@ While I'm currently working out specific dates to accomplish certain projects, b
         - [X] [Merge](/ClassicAlgorithms/MergeSort)
         - [ ] Bubble
     - [ ] Closest pair
+    - [ ] Binary Search
 * Graphing
     - [ ] Link graph
     - [ ] Dijkstra's Algorithm
@@ -91,7 +92,7 @@ While I'm currently working out specific dates to accomplish certain projects, b
 * Web 
     - [ ] Page Scraper
     - [ ] Fetch the Weather
-    - [ ] Get Atomic Time
+    - [x] [Get Atomic Time](https://github.com/Dulatr/WorldTimeAPI) (not exactly atomic time, but is a python package for retrieving various timezones)
     - [ ] Content Management System
     - [ ] Forum
 * Files
