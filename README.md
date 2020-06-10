@@ -51,7 +51,7 @@ While I'm currently working out specific dates to accomplish certain projects, b
     - [x] [Display of Pi digits](/Numbers/DigitsOfPi/)
     - [X] [Fib sequence](/Numbers/FibonnaciSequence)
     - [x] [Prime factors](/Numbers/PrimeFactors)
-    - [ ] Binary to Decimal converter
+    - [x] [Binary to Decimal converter](/Numbers/BinaryToDecimal)
     - [ ] Unit conversion
     - [ ] Alarm Clock
     - [x] [City distances](/Numbers/Distance)
