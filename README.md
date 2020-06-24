@@ -90,7 +90,7 @@ While I'm currently working out specific dates to accomplish certain projects, b
     - [x] [Shapes](/Classes/Shapes)
     - [ ] Flower Shop
 * Web 
-    - [ ] Page Scraper
+    - [x] [Page Scraper](https://github.com/Dulatr/MoneyMarketsCLI)
     - [ ] Fetch the Weather
     - [x] [Get Atomic Time](https://github.com/Dulatr/WorldTimeAPI) (not exactly atomic time, but is a python package for retrieving various timezones)
     - [ ] Content Management System
